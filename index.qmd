@@ -4,6 +4,10 @@ format: html
 editor: source
 ---
 
+::: {.panel-tabset}
+
+### график
+
 ```{r}
 #| echo: false
 #| message: false
@@ -55,6 +59,25 @@ plot_ly(
   parents=all_merged$parents,
   values=all_merged$value)
 ```
+
+### таблица
+
+```{r}
+#| echo: false
+#| message: false
+
+df |> 
+  DT::datatable(class = 'cell-border stripe', 
+                rownames = FALSE, 
+                filter = 'top', 
+                options = list(pageLength = 20, 
+                               autoWidth = TRUE, 
+                               info = FALSE,
+                               dom = 'fBltp',
+                               paginate = TRUE))
+```
+
+:::
 
 Составлено на основе официальной сметы, представленной УК ([скачать](https://raw.githubusercontent.com/agricolamz/2024.09.22_treemap/refs/heads/main/smeta_01.11.2024.pdf)).
 
