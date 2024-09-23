@@ -56,6 +56,6 @@ plot_ly(
   values=all_merged$value)
 ```
 
-Составлено на основе официальной сметы, представленной УК (скачать).
+Составлено на основе официальной сметы, представленной УК ([скачать](https://raw.githubusercontent.com/agricolamz/2024.09.22_treemap/refs/heads/main/smeta_01.11.2024.pdf)).
 
-Данные доступны по следующей ссылке (скачать).
+Данные в формате `.xlsx` доступны по ссылке ([скачать](https://raw.githubusercontent.com/agricolamz/2024.09.22_treemap/refs/heads/main/smeta_01.11.2024.xlsx)).
